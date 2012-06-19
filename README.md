@@ -8,10 +8,8 @@ Simple setup:
         <script src="https://raw.github.com/Xalior/djsex/master/Core.js" type="text/javascript"></script>
         <script src="https://raw.github.com/Xalior/djsex/master/CSS.js" type="text/javascript"></script>
         <script src="https://raw.github.com/Xalior/djsex/master/Anim.js" type="text/javascript"></script>
-
-    * "D's Javascript Extensions" available from <http://www.rimron.co.uk/djsex/>
-
-
+ 
+  "D's Javascript Extensions" available from <http://www.rimron.co.uk/djsex/>
 
 2. Include rotateAndSwitch.js and rotateAndSwitch.css
 
@@ -40,4 +38,4 @@ Simple setup:
         el.innerHTML = "Hello World";
         bestestContentEvar.next(el);
 
-    * and so on.... see the [main djsex site](http://www.rimron.co.uk/djsex/) for more details&hellip;
+  and so on.... see the [main djsex site](http://www.rimron.co.uk/djsex/) for more details&hellip;
