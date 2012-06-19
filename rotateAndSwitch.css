@@ -1,0 +1,45 @@
+#container {
+  display: block;
+  -webkit-perspective: 1000px; 
+}
+
+.threedworld {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
+.cube {
+  display: block;
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+}
+
+.cube div {
+  background: white;
+  color: black;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@-webkit-keyframes next-frame-2 {
+  0%   { 	-webkit-transform: rotateY(0deg); }
+  100% { 	-webkit-transform: rotateY(-90deg); }
+}
+@-webkit-keyframes prev-frame-2 {
+  0%   { 	-webkit-transform: rotateY(0deg); }
+  100% { 	-webkit-transform: rotateY(90deg); }
+}
+@-webkit-keyframes top-frame-2 {
+  0%   { 	-webkit-transform: rotateX(0deg); }
+  100% { 	-webkit-transform: rotateX(-90deg); }
+}
+@-webkit-keyframes bottom-frame-2 {
+  0%   { 	-webkit-transform: rotateX(0deg); }
+  100% { 	-webkit-transform: rotateX(90deg); }
+}
