@@ -1,0 +1,106 @@
+<!doctype HTML>
+<html>
+<head>
+ <script type="text/javascript" src="https://raw.github.com/Xalior/djsex/master/Core.js"></script>
+ <script type="text/javascript" src="https://raw.github.com/Xalior/djsex/master/Anim.js"></script>
+ <script type="text/javascript" src="https://raw.github.com/Xalior/djsex/master/CSS.js"></script>
+ <script type="text/javascript" src="rotateAndSwitch.js"></script>
+ <link rel="stylesheet" href="rotateAndSwitch.css" type="text/css">
+ <title>rotateAndSwitch demo&hellip;</title>
+</head>
+<body style="
+    margin: 0;
+        padding: 0;
+          background: #000;
+            color: #fff;">
+    <div id="container" style="
+          width: 800px;
+          height: 600px;
+          margin: 0 auto;
+          text-align: center;">
+ <div class="threedworld">
+ <div class="cube">
+
+  <div class="front_face">
+  <font size="120pt">1</font>Bacon ipsum dolor sit amet andouille short loin chicken pastrami pancetta, rump pork chuck boudin fatback swine pork loin tenderloin ribeye. Ball tip prosciutto hamburger, brisket chicken ground round pork chop biltong speck tri-tip pig strip steak. Venison chuck andouille, beef ribs pig tongue.
+<iframe width="640" height="480" src="http://www.youtube.com/embed/k3DAjQhChRs" frameborder="0" allowfullscreen style="margin: 0 70px"></iframe>
+  </div>
+  
+
+ </div>
+ </div>
+ <input type=button onclick="javascript:next()" name="next" value="switcher.next">
+ <input type=button onclick="javascript:prev()" name="prev" value="switcher.prev">
+ <input type=button onclick="javascript:top()" name="top" value="switcher.top">
+ <input type=button onclick="javascript:bottom()" name="bottom" value="switcher.bottom">
+ </div>
+ <script type="text/javascript">
+var switcher;
+
+function init() {
+//    loop();
+    switcher = new rotateAndSwitch(document.getElementById('container'));
+    //switcher.init();
+	console.log(switcher);
+}
+
+var counter = 1;
+
+function next() {
+    el = document.createElement("div");
+    counter ++;
+    el.innerHTML = '<font size="120pt">'+counter+'</font>Bacon ipsum dolor sit amet andouille short loin chicken pastrami pancetta, rump pork chuck boudin fatback swine pork loin tenderloin ribeye. Ball tip prosciutto hamburger, brisket chicken ground round pork chop biltong speck tri-tip pig strip steak. Venison chuck andouille, beef ribs pig tongue flank pork turkey shoulder meatloaf tri-tip kielbasa. Pig hamburger pastrami, shankle pork shank andouille ham beef. Venison pancetta frankfurter, pork strip steak t-bone shoulder pig.<br>\
+<br>\
+Frankfurter kielbasa corned beef rump pork sirloin. Shoulder hamburger kielbasa, spare ribs ground round capicola rump leberkas. Speck meatball ball tip bresaola, beef turducken tri-tip short ribs capicola swine salami t-bone boudin frankfurter. Spare ribs andouille boudin pork belly, jowl shankle meatball tri-tip chuck meatloaf salami leberkas ham hock sirloin. Fatback corned beef shank venison tri-tip tenderloin, turkey brisket. Turkey ground round biltong, meatball prosciutto pig cow pastrami venison short loin frankfurter strip steak meatloaf sirloin. Andouille ribeye pancetta kielbasa.<br>\
+<br>\
+Ball tip short loin bacon, pancetta venison rump shankle brisket. Chicken ribeye pancetta turducken jowl meatball beef ribs, bresaola flank tenderloin pork spare ribs speck sirloin strip steak. Pig ham hock corned beef chuck bresaola spare ribs, brisket hamburger. Pig venison short ribs, shankle pancetta tri-tip bacon filet mignon ham andouille jerky t-bone. Venison shank pork loin beef ribs.<br>\
+<br>\
+Shoulder chicken brisket, andouille venison corned beef ball tip meatball ham hamburger. Jerky beef filet mignon shankle. Tongue meatloaf rump, tail meatball pig short loin bacon. Chuck boudin ham, pork brisket ham hock sirloin short loin venison bacon shankle beef ribs. Brisket short ribs sirloin ground round kielbasa leberkas jowl flank, tongue pork belly. Filet mignon speck swine, brisket turducken pork belly turkey bresaola biltong tail&hellip<br>';
+    switcher.next(el);
+}
+
+function prev() {
+    el = document.createElement("div");
+    counter ++;
+    el.innerHTML = '<font size="120pt">'+counter+'</font>Bacon ipsum dolor sit amet andouille short loin chicken pastrami pancetta, rump pork chuck boudin fatback swine pork loin tenderloin ribeye. Ball tip prosciutto hamburger, brisket chicken ground round pork chop biltong speck tri-tip pig strip steak. Venison chuck andouille, beef ribs pig tongue flank pork turkey shoulder meatloaf tri-tip kielbasa. Pig hamburger pastrami, shankle pork shank andouille ham beef. Venison pancetta frankfurter, pork strip steak t-bone shoulder pig.<br>\
+<br>\
+Frankfurter kielbasa corned beef rump pork sirloin. Shoulder hamburger kielbasa, spare ribs ground round capicola rump leberkas. Speck meatball ball tip bresaola, beef turducken tri-tip short ribs capicola swine salami t-bone boudin frankfurter. Spare ribs andouille boudin pork belly, jowl shankle meatball tri-tip chuck meatloaf salami leberkas ham hock sirloin. Fatback corned beef shank venison tri-tip tenderloin, turkey brisket. Turkey ground round biltong, meatball prosciutto pig cow pastrami venison short loin frankfurter strip steak meatloaf sirloin. Andouille ribeye pancetta kielbasa.<br>\
+<br>\
+Ball tip short loin bacon, pancetta venison rump shankle brisket. Chicken ribeye pancetta turducken jowl meatball beef ribs, bresaola flank tenderloin pork spare ribs speck sirloin strip steak. Pig ham hock corned beef chuck bresaola spare ribs, brisket hamburger. Pig venison short ribs, shankle pancetta tri-tip bacon filet mignon ham andouille jerky t-bone. Venison shank pork loin beef ribs.<br>\
+<br>\
+Shoulder chicken brisket, andouille venison corned beef ball tip meatball ham hamburger. Jerky beef filet mignon shankle. Tongue meatloaf rump, tail meatball pig short loin bacon. Chuck boudin ham, pork brisket ham hock sirloin short loin venison bacon shankle beef ribs. Brisket short ribs sirloin ground round kielbasa leberkas jowl flank, tongue pork belly. Filet mignon speck swine, brisket turducken pork belly turkey bresaola biltong tail&hellip<br>';
+    switcher.prev(el);
+}
+function bottom() {
+    el = document.createElement("div");
+    counter ++;
+    el.innerHTML = '<font size="120pt">'+counter+'</font>Bacon ipsum dolor sit amet andouille short loin chicken pastrami pancetta, rump pork chuck boudin fatback swine pork loin tenderloin ribeye. Ball tip prosciutto hamburger, brisket chicken ground round pork chop biltong speck tri-tip pig strip steak. Venison chuck andouille, beef ribs pig tongue flank pork turkey shoulder meatloaf tri-tip kielbasa. Pig hamburger pastrami, shankle pork shank andouille ham beef. Venison pancetta frankfurter, pork strip steak t-bone shoulder pig.<br>\
+<br>\
+Frankfurter kielbasa corned beef rump pork sirloin. Shoulder hamburger kielbasa, spare ribs ground round capicola rump leberkas. Speck meatball ball tip bresaola, beef turducken tri-tip short ribs capicola swine salami t-bone boudin frankfurter. Spare ribs andouille boudin pork belly, jowl shankle meatball tri-tip chuck meatloaf salami leberkas ham hock sirloin. Fatback corned beef shank venison tri-tip tenderloin, turkey brisket. Turkey ground round biltong, meatball prosciutto pig cow pastrami venison short loin frankfurter strip steak meatloaf sirloin. Andouille ribeye pancetta kielbasa.<br>\
+<br>\
+Ball tip short loin bacon, pancetta venison rump shankle brisket. Chicken ribeye pancetta turducken jowl meatball beef ribs, bresaola flank tenderloin pork spare ribs speck sirloin strip steak. Pig ham hock corned beef chuck bresaola spare ribs, brisket hamburger. Pig venison short ribs, shankle pancetta tri-tip bacon filet mignon ham andouille jerky t-bone. Venison shank pork loin beef ribs.<br>\
+<br>\
+Shoulder chicken brisket, andouille venison corned beef ball tip meatball ham hamburger. Jerky beef filet mignon shankle. Tongue meatloaf rump, tail meatball pig short loin bacon. Chuck boudin ham, pork brisket ham hock sirloin short loin venison bacon shankle beef ribs. Brisket short ribs sirloin ground round kielbasa leberkas jowl flank, tongue pork belly. Filet mignon speck swine, brisket turducken pork belly turkey bresaola biltong tail&hellip<br>';
+    switcher.turn(el,"bottom");
+}
+function top() {
+    el = document.createElement("div");
+    counter ++;
+    el.innerHTML = '<font size="120pt">'+counter+'</font>Bacon ipsum dolor sit amet andouille short loin chicken pastrami pancetta, rump pork chuck boudin fatback swine pork loin tenderloin ribeye. Ball tip prosciutto hamburger, brisket chicken ground round pork chop biltong speck tri-tip pig strip steak. Venison chuck andouille, beef ribs pig tongue flank pork turkey shoulder meatloaf tri-tip kielbasa. Pig hamburger pastrami, shankle pork shank andouille ham beef. Venison pancetta frankfurter, pork strip steak t-bone shoulder pig.<br>\
+<br>\
+Frankfurter kielbasa corned beef rump pork sirloin. Shoulder hamburger kielbasa, spare ribs ground round capicola rump leberkas. Speck meatball ball tip bresaola, beef turducken tri-tip short ribs capicola swine salami t-bone boudin frankfurter. Spare ribs andouille boudin pork belly, jowl shankle meatball tri-tip chuck meatloaf salami leberkas ham hock sirloin. Fatback corned beef shank venison tri-tip tenderloin, turkey brisket. Turkey ground round biltong, meatball prosciutto pig cow pastrami venison short loin frankfurter strip steak meatloaf sirloin. Andouille ribeye pancetta kielbasa.<br>\
+<br>\
+Ball tip short loin bacon, pancetta venison rump shankle brisket. Chicken ribeye pancetta turducken jowl meatball beef ribs, bresaola flank tenderloin pork spare ribs speck sirloin strip steak. Pig ham hock corned beef chuck bresaola spare ribs, brisket hamburger. Pig venison short ribs, shankle pancetta tri-tip bacon filet mignon ham andouille jerky t-bone. Venison shank pork loin beef ribs.<br>\
+<br>\
+Shoulder chicken brisket, andouille venison corned beef ball tip meatball ham hamburger. Jerky beef filet mignon shankle. Tongue meatloaf rump, tail meatball pig short loin bacon. Chuck boudin ham, pork brisket ham hock sirloin short loin venison bacon shankle beef ribs. Brisket short ribs sirloin ground round kielbasa leberkas jowl flank, tongue pork belly. Filet mignon speck swine, brisket turducken pork belly turkey bresaola biltong tail&hellip<br>';
+    switcher.turn(el,"top");
+
+}
+function loop(now) {
+    window.requestAnimationFrame(loop);
+}
+djsex.onDOMReady(init);
+</script>
+</body>
+</html>
+
